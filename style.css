@@ -106,13 +106,35 @@ form {
   margin-top: 4rem;
 }
 
+.text {
+  max-height: 150px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  text-overflow: ellipsis;
+  scrollbar-width: none;
+}
+
 .search-field {
   display: flex;
   align-items: center;
   gap: 1.2rem;
   background: #f4f4ff;
   border-radius: 0.5rem;
-  padding: 1.2rem 0.8rem 1.2rem 1.4rem;
+  padding: 1.2rem 1.4rem 1.2rem 1.4rem;
+  justify-content: space-between;
+}
+
+i {
+  margin-right: 10px;
+}
+
+i:last-child {
+  margin: 0;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
 }
 
 select,
@@ -196,7 +218,6 @@ form button {
   border: 0.1rem solid #eaeaea;
   border-radius: 1rem;
   overflow: hidden;
-  max-height: 40rem;
 }
 
 .content-block h1 {
@@ -236,9 +257,34 @@ form button {
   margin-right: 0.8rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+  header::before,
+  header::after {
+    content: none;
+  }
+
+  header .content {
+    display: grid;
+    padding: 5rem;
+  }
+
+  header .content .top {
+    padding: 0 5rem;
+  }
+
+  .search {
+    display: inline-grid;
+  }
+
+  .search-field {
+    gap: 0;
+  }
+
   .blocks .top {
     display: grid;
+    justify-content: center;
+    margin-bottom: 5rem;
+    gap: 2rem;
   }
 
   .blocks .top .switch-button {
@@ -251,7 +297,7 @@ form button {
   }
 
   .blocks .content .content-block {
-    margin: 2rem;
+    margin: 4rem 0;
   }
 
   .blocks {
