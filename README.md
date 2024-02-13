@@ -22,6 +22,8 @@
   📃 Project preview
 </h2>
 
+<img width="1391" alt="image" src="https://github.com/marcoftmartins/boraCodar-07-find-your-carnival-block/assets/47821731/8f8b5100-1c35-47e5-b739-bf17833bf2cf">
+
 ---
 
 ## 🚀 Deploy
